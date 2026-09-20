@@ -77,7 +77,7 @@ The RTL simulation was performed in **Vivado** to verify the FSM state transitio
 
 The waveform below shows the FSM transitions and corresponding traffic light outputs during simulation.
 
-<img width="532" height="261" alt="image" src="https://github.com/user-attachments/assets/1103f53b-809b-42c0-b568-35b00cd58fd0" />
+![RTL Simulation Waveform](Screenshots/rtl_simulation.png)
 
 
 ## 🔄 RTL-to-GDSII Flow
