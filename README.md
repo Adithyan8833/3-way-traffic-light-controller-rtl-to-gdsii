@@ -39,12 +39,12 @@ The controller is implemented using a six-state FSM:
 
 | State | Road A | Road B | Road C |
 |-------|--------|--------|--------|
-| S0 | Green | Red | Red |
-| S1 | Yellow | Red | Red |
-| S2 | Red | Green | Red |
-| S3 | Red | Yellow | Red |
-| S4 | Red | Red | Green |
-| S5 | Red | Red | Yellow |
+| S0    | Green  | Red    | Red    |
+| S1    | Yellow | Red    | Red    |
+| S2    | Red    | Green  | Red    |
+| S3    | Red    | Yellow | Red    |
+| S4    | Red    | Red    | Green  |
+| S5    | Red    | Red    | Yellow |
 
 ### Timing
 
@@ -68,10 +68,17 @@ The traffic light controller was designed using **Verilog HDL** and verified thr
 
 ### RTL Source Files
 
-- 📄 [Traffic Light Controller RTL](RTL/smart_traffic_3way.v)
-- 🧪 [RTL Testbench](RTL/smart_traffic_3way_tb.v)
+- 📄 [Traffic Light Controller RTL](RTL/traffic_3way.v)
+- 🧪 [RTL Testbench](RTL/traffic_tb.v)
 
 The RTL simulation was performed in **Vivado** to verify the FSM state transitions and the corresponding traffic light outputs for Roads A, B, and C.
+
+### RTL Simulation Result
+
+The waveform below shows the FSM transitions and corresponding traffic light outputs during simulation.
+
+<img width="532" height="261" alt="image" src="https://github.com/user-attachments/assets/1103f53b-809b-42c0-b568-35b00cd58fd0" />
+
 
 ## 🔄 RTL-to-GDSII Flow
 
